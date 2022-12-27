@@ -18,7 +18,7 @@
             element.setAttribute('height', this.height);                                // задать высоту     
             parent.prepend(element);                                                    // добавить в родителя
         },
-        receiveCanvas() { this.element = document.querySelector(`${this.id}`); },       // получить холст
+        receiveCanvas() { this.element = document.querySelector(`#${this.id}`); },      // получить холст
         defineCanvas() { this.context = this.element.getContext("2d"); }                // определить контекст
     };
 
